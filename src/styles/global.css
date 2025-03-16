@@ -13,7 +13,7 @@
   --text-color:rgb(255, 255, 255);
   --text-secundary: rgb(193, 193, 193);
   --primary-color:rgb(255, 241, 84);
-  --secundary-color:rgb(64, 143, 80);
+  --secundary-color:rgb(68, 218, 143);
   --accent-color:rgb(235, 232, 134);  
 }
 
@@ -24,7 +24,7 @@ padding: 0%;
 
 html, body{
   background: rgb(250,245,245);
-  background: radial-gradient(circle, rgba(250,245,245,1) 0%, rgb(247, 238, 238) 47%, rgba(255,255,255,1) 100%);
+  background: radial-gradient(circle, var(--base-color) 0%, var(--base-variant) 100%);
   height: 100%;
   width: 100%;
 }

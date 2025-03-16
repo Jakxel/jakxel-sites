@@ -13,7 +13,7 @@ import Theme from './Theme.astro'
       <a class="main-link" id="docs" href="">Docs</a>
     </div>
     <div class="menu-sct">
-      <img src="lupa.png" alt="">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
       <Theme />
     </div>
   </div>
@@ -22,7 +22,7 @@ import Theme from './Theme.astro'
 <style>
   .display{
     width: 100vw;
-    height: 3em;
+    height: 4em;
     display: flex;
     align-items: center;
     align-content: center;
@@ -33,7 +33,7 @@ import Theme from './Theme.astro'
     text-decoration: none;
   }
   .title-sct{
-    background: radial-gradient(circle, rgba(50,80,100,1) 0%, rgba(185,60,70,1) 100%);
+    background: radial-gradient(circle, var(--secundary-color) 0%, var(--primary-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 1s;
@@ -44,6 +44,7 @@ import Theme from './Theme.astro'
 
   .link-sct{
     display: flex;
+    align-items: center;
     gap: 10px;
   }
 
@@ -61,5 +62,11 @@ import Theme from './Theme.astro'
     height: auto;
     width: auto;
     padding: 2px;
+  }
+
+  .menu-sct{
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 </style>
