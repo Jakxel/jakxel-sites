@@ -4,13 +4,13 @@ import Theme from './Theme.astro'
 <header>
   <div class="display">
     <div class="title-sct">
-      <a href="">Jakxel's Sites</a>
+      <a href="title">Jakxel's Sites</a>
     </div>
-    <div class="links-sct">
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Blog</a>
-      <a href="">Docs</a>
+    <div class="link-sct">
+      <a class="main-link" href="">Home</a>
+      <a class="main-link" href="">About</a>
+      <a class="main-link" href="">Blog</a>
+      <a class="main-link" id="docs" href="">Docs</a>
     </div>
     <div class="menu-sct">
       <img src="lupa.png" alt="">
@@ -20,11 +20,46 @@ import Theme from './Theme.astro'
 </header>
 
 <style>
-  header{
-    width: 100vw;
-  }
   .display{
+    width: 100vw;
+    height: 3em;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    justify-content:space-evenly;
+  }
+  a{
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .title-sct{
+    background: radial-gradient(circle, rgba(50,80,100,1) 0%, rgba(185,60,70,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s;
+  }
+  .title-sct:hover{
+    scale: 1.1;
+  }
+
+  .link-sct{
+    display: flex;
+    gap: 10px;
+  }
+
+  .main-link:hover{
+    text-decoration: underline;
+  }
+  #docs:hover{
+    text-decoration: none;
+    background-color: var(--secundary-color);
+    color:white;
+  }
+#docs{
+    border:1px solid var(--text-secundary);
+    border-radius: 5px;
+    height: auto;
+    width: auto;
+    padding: 2px;
   }
 </style>
