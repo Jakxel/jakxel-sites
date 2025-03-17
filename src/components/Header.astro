@@ -4,12 +4,13 @@ import Theme from './Theme.astro'
 <header>
   <div class="display">
     <div class="title-sct">
-      <a href="title">Jakxel's Sites</a>
+      <a id="title" href="title">Jakxel's Sites</a>
     </div>
     <div class="link-sct">
       <a class="main-link" href="">Home</a>
       <a class="main-link" href="">About</a>
       <a class="main-link" href="">Blog</a>
+      <a class="main-link" href="">Notes</a>
       <a class="main-link" id="docs" href="">Docs</a>
     </div>
     <div class="menu-sct">
@@ -20,22 +21,33 @@ import Theme from './Theme.astro'
 </header>
 
 <style>
-  .display{
+  header{
+    position: absolute;
     width: 100vw;
-    height: 4em;
     display: flex;
     align-items: center;
-    align-content: center;
-    justify-content:space-evenly;
+    justify-content: center;
+  }
+
+  div{
+  }
+  .display{
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   a{
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 500;
     text-decoration: none;
   }
   .title-sct{
-    background: radial-gradient(circle, var(--secundary-color) 0%, var(--primary-color) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
     transition: 1s;
   }
   .title-sct:hover{
@@ -43,6 +55,10 @@ import Theme from './Theme.astro'
   }
 
   .link-sct{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -65,8 +81,17 @@ import Theme from './Theme.astro'
   }
 
   .menu-sct{
-    display: flex;
+    display:flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    width: 300px;
+  }
+  #title{
+    font-size:30px;
+    font-weight: 1000;
+    background: radial-gradient(circle, var(--secundary-color) 0%, var(--primary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 </style>

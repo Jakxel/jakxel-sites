@@ -9,9 +9,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <BaseLayout>
 	<div class="display">
 		<h1>Welcome to Jakxel Sites!</h1>
-		<p>Description in general for the viewer</p>
+		<p>The wind rises, we must ry to Live</p>
 		<div class="found-me">
-			<p>can found me in</p>
+			<p id="f">Found me on</p>
 			<img src="src/assets/logotipo-de-github.png" alt="github.logo">
 		</div>
 		<div class="btns">
@@ -27,6 +27,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <style>
 	.display {
 		margin: 0;
+		padding: 0%;
 		width: 100%;
 		height: 100%;
 		align-content: center; 
@@ -34,16 +35,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		justify-content: center;
 		flex-direction:column;
 		align-items: center;
-		gap: 1em;
 
 	}
 	h1{
 	background: radial-gradient(circle, var(--secundary-color) 0%, var(--primary-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+	margin-bottom: 5px;
 	}
 	p{
 		color:var(--text-color);
+		font-size: 20px;
+		font-weight: 500;
+		margin-top: 0;
 	}
 	button{
 		background-color: transparent;
@@ -51,9 +55,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		padding: 1em;
 		color: var(--text-color);
 		border-radius: 1em;
+		margin-top: 15px;
 	}
 	.found-me{
+		margin-top: 20px;
 		display:flex;
-		gap: 1em;
+		gap: 10px;
+	}
+	#f{
+		font-size: 15px;
 	}
 </style>
