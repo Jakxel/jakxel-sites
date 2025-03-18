@@ -15,8 +15,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			<img src="src/assets/logotipo-de-github.png" alt="github.logo">
 		</div>
 		<div class="btns">
-			<button>Read Blog</button>
-			<button>Reflexion</button>
+			<button id="btn1">Read Blog</button>
+			<button id="btn2">Reflexion</button>
 		</div>
 	</div>
 	
@@ -64,5 +64,29 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	}
 	#f{
 		font-size: 15px;
+	}
+
+	.btns{
+		display: flex;
+		gap: 10px;
+		transition: 1s;
+	}
+	#btn1:hover,#btn2:hover{
+		scale: 1.1;
+		transition: 1s;
+	}
+	
+	#btn1{
+		background: radial-gradient(circle, var(--secundary-color) 0%, var(--primary-color) 100%);
+		color: white;
+		font-family: Quicksand;
+		font-weight: 500;
+		border: none;
+		box-shadow: 1px 1px 10px rgba(3, 3, 3, 0.125);
+	}
+
+	#btn2{
+		border: 1px solid rgba(200, 199, 199, 0.578);
+		box-shadow: 1px 1px 10px rgba(3, 3, 3, 0.125);
 	}
 </style>
