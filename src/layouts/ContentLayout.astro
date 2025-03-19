@@ -1,0 +1,40 @@
+
+---
+import Baselayout from './BaseLayout.astro';
+---
+
+<Baselayout>
+  <div class="display">
+  <div class="content">
+    <slot/>
+  </div>
+</div>
+</Baselayout>
+
+
+<style>
+    .display{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .content{
+    display: block;
+    height: min-content;
+    width: 1000px;
+    margin-top: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @media (max-width:720px) {
+    .content{
+      height: 60%;
+      width: 100%;
+      padding: 20px;
+      margin: 20px;
+  }
+  }
+</style>

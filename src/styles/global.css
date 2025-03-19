@@ -27,7 +27,7 @@ margin: 0%;
 padding: 0%;
 }
 
-html, body{
+html,body{
   background: radial-gradient(circle at top left, var(--background-1) 20%, transparent 80%),
   radial-gradient(circle at bottom right, var(--background-2) 20%, transparent 80%),
   var(--base-color); /* Color base de fondo */
@@ -41,25 +41,45 @@ h1,h2,h3,h4,h5,h6,p{
 h1{
   font-size: 3em;
   font-weight: 1000;
+  margin-bottom: 15px;
+  color: var(--text-primary);
+
 }
 h2{
-  font-size: 2em;
-  font-weight: 800;
+  font-size: 2.5em;
+  font-weight: 900;
   color: var(--text-primary);
+  margin-bottom: 15px;
 }
 h3{
-  font-size: 1.5em;
-  font-weight: 700;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: var(--text-primary);
 }
 h4{
-  font-size: 1.2em;
-  font-weight: 500;
+  font-size: 1.75em;
+  font-weight: 700;
   color: var(--text-primary);
+  margin-bottom: 15px;
+}
+h5{
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+h6{
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 15px;
 }
 p{
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-secundary);
+  margin-bottom: 15px;
 }
 img{
   height: 1em;
