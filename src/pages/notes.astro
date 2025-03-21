@@ -1,0 +1,41 @@
+---
+import ContentLayout from "../layouts/ContentLayout.astro"
+
+---
+<ContentLayout>
+  <div>
+  <article class="article" id="1">1</article>
+  <article class="article"id="2">2</article>
+  <article class="article"id="3">3</article>
+  <article class="article"id="4">4</article>
+  </div>
+  
+</ContentLayout>
+
+<style>
+  div
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    gap: 10px;
+    height: 500px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    scrollbar-width: none;
+  } 
+  div::-webkit-scrollbar{
+    display: none;
+  }
+  article{
+  background-color: rgba(240, 248, 255, 0.693);
+  box-shadow: 1px 1px 10px rgb(255, 255, 255), -1px -1px 10px rgb(137, 137, 137);
+  margin: 10px;
+  height: 200px;
+  border-radius: 10px;
+  }
+
+ 
+</style>
